@@ -24,6 +24,20 @@
   {@param? feedback: string}
   {@param homeUrl: string}
 
+  <!-- ========== Custom overrides for exported codelabs ========== -->
+  <style>
+    /* Hide the Done button (so it never shows) */
+    google-codelab #done {
+      display: none !important;
+    }
+
+    /* Hide only the close (X) button */
+    google-codelab #arrow-back {
+      display: none !important;
+    }
+  </style>
+  <!-- ============================================================ -->
+
   <div id="codelab-title">
     <div id="codelab-nav-buttons">
       <a href="{$homeUrl}" id="arrow-back"><i class="material-icons">close</i></a>

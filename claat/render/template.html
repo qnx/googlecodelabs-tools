@@ -21,9 +21,12 @@ the License.
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
   <title>{{.Meta.Title}}</title>
+
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="{{.Prefix}}/claat-public/codelab-elements.css">
+
+  <!-- your custom override CSS -->
   <style>
     .success {
       color: #1e8e3e;
@@ -31,10 +34,23 @@ the License.
     .error {
       color: red;
     }
+
+    /* Hide the Done button */
+    google-codelab #done {
+      display: none !important;
+    }
+
+    /* Hide only the close (X) button */
+    google-codelab #arrow-back {
+      display: none !important;
+    }
   </style>
+
 </head>
 <body>
+
   <google-codelab-analytics gaid="{{.GlobalGA}}" ga4id="{{.GlobalGA4}}"></google-codelab-analytics>
+
   <google-codelab codelab-gaid="{{.Meta.GA}}"
                   codelab-ga4id="{{.Meta.GA4}}"
                   id="{{.Meta.ID}}"
